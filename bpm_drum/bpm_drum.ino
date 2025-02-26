@@ -17,11 +17,17 @@ int years[] = {2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024}; // L
 int bpms[] = {115, 100, 96, 77, 136, 171, 103, 81, 204, 160}; // the BPM of the songs for the year with the same index
 char *songTitles[] = {"Uptown Funk", "Love Yourself", "Shape of You", "God's Plan", "Old Town Road", "Blinding Lights", "Levitating", "Heat Waves", "Last Night", "Lose Control"};
 
+#include <LiquidCrystal.h> 
+LiquidCrystal lcd(13, 12, 11, 10, 9, 8);
+
 void setup() {
 
-  myservo.attach(9);
+  myservo.attach(3);
 
   Serial.begin(9600);                       //begin serial communication with the computer
+
+  lcd.begin(16, 2);                 //tell the lcd library that we are using a display that is 16 characters wide and 2 characters high
+  lcd.clear();                      //clear the display
 }
 
 void loop() {
@@ -32,6 +38,7 @@ void loop() {
  Serial.print(songTitles[index]);
  Serial.print("-");
  Serial.println(currentYear);
+ displaySongInfo();
  moveServo(servoSpeed);
 
 }
@@ -61,4 +68,13 @@ void moveServo(int speed) {
     delay(speed);
     myservo.write(servoPosition);
   }
+}
+
+void displaySongInfo() {
+  lcd.clear();
+  lcd.setCursor(0, 0);              //set the cursor to the 0,0 position (top left corner)
+  lcd.print(songTitles[index]);       //print hello, world! starting at that position
+
+  lcd.setCursor(0, 1); 
+  lcd.print(currentYear);
 }
