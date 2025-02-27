@@ -2,7 +2,7 @@
 Created by Vanessa Balin and Neil Hadap
 
 ## Data Sources
-Top #1 Billboard Songs over the Years: https://www.billboard.com/lists/year-end-hot-100-number-one-songs/1979-3/
+Top #1 Billboard Songs over the Years: https://www.billboard.com/lists/year-end-hot-100-number-one-songs/2024-12/
 
 Searched for the BPMs of #1 songs from 2015-2024 on this site: https://songbpm.com/
 
