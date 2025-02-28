@@ -58,12 +58,12 @@ void loop() {
 void getChosenSongInfo() {
   // Get input from potentiometer
   potPosition = analogRead(A0);
-  index = map(potPosition, 0, 1023, 0, 10); // convert potentiometer dial position to an index 0-10;
+  index = map(potPosition, 0, 1023, 9, -1); // convert potentiometer dial position to an index 0-10;
 
   /* Our potentiometer had a hard time recognizing the edge value of 9 when turned all the way.
   Moved range up to 10 to let the last index double its potentiometer space. */
-  if (index == 10) {
-    index = 9;
+  if (index == -1) {
+    index = 0;
   }
 
   // Get the relevant information from the selected year
