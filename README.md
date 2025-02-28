@@ -6,6 +6,9 @@ Top #1 Billboard Songs over the Years: https://www.billboard.com/lists/year-end-
 
 Searched for the BPMs of #1 songs from 2015-2024 on this site: https://songbpm.com/
 
+## Video Link
+https://youtu.be/34z5NKHdfpQ?si=CT9gR7hONpGj0ugU
+
 ## Artist Statement
 Music is not just something we hear, it's something we feel. We created the BPM Time Machine to help this idea come to life and immerse listeners in a new type of experience. When you turn the dial, the screen shows the top song from a specific year (2015-2025), and a servo taps a drum to match the song’s beats per minute (BPM). This lets you see how music styles have changed over the years and actually feel the rhythm and the evolution of music through the years. 
 The intended audience of this project is music lovers. Given a beat, this music-loving audience can reflect on the hit songs since 2015. 
