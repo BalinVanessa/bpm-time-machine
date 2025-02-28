@@ -74,11 +74,11 @@ void getChosenSongInfo() {
 // Moves the servo arm up and down to match the current BPM
 void moveServo(int speed) {
   if(speed != 0) {                  // only run this code if the speed is not 0 
-    servoPosition = 40;
+    servoPosition = 75; // down position
     delay(speed);
     myservo.write(servoPosition);
 
-    servoPosition = 100;
+    servoPosition = 110; // up position
     delay(speed);
     myservo.write(servoPosition);
   }
